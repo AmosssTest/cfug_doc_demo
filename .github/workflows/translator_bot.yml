@@ -15,7 +15,7 @@ jobs:
       contains(fromJson('["member", "owner"]'), github.event.comment.author_association)
     steps:
       - name: run translator-bot
-        uses: cfug/translator_bot@main
+        uses: cfug/translator_bot@dev-1
         with:
           github_token: ${{ secrets.GH_TOKEN }}
           gemini_api_key: ${{ secrets.GEMINI_API_KEY }}
