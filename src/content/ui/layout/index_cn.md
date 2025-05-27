@@ -20,6 +20,7 @@ keywords: Flutter布局核心介绍,核心机制,Flutter布局
 ## 概览
 
 :::secondary 要点
+
 <!-- What's the point? -->
 
 * Layouts in Flutter are built with widgets.
@@ -472,6 +473,8 @@ App 源码：
 
 * [Material app]({{examples}}/layout/base)
 
+  [Material app]({{examples}}/layout/base)
+
 * [Non-Material app]({{examples}}/layout/non_material)
 
   [非 Material app]({{examples}}/layout/non_material)
@@ -497,6 +500,7 @@ and a `Column` widget to arrange widgets vertically.
 使用 `Column` widget 垂直排列 widget。
 
 :::secondary 要点
+
 <!-- What's the point? -->
 
 * `Row` and `Column` are two of the most commonly used layout patterns.
@@ -1121,6 +1125,7 @@ only Material apps can use the Material Components library.
 
 {% endtab %}
 
+<!-- {% tab "Material widget" %} -->
 {% tab "Material widget" %}
 
 [`Scaffold`][]
@@ -1155,19 +1160,32 @@ only Material apps can use the Material Components library.
 
 {% endtab %}
 
+<!-- {% tab "Cupertino widget" %} -->
 {% tab "Cupertino widget" %}
 
 [`CupertinoPageScaffold`][]
-: Provides the basic layout structure for an iOS-style page.
+<br> Provides the basic layout structure for an iOS-style page.
+
+[`CupertinoPageScaffold`][]
+<br> 为 iOS 风格的页面提供基本的布局结构。
 
 [`CupertinoNavigationBar`][]
-: Creates an iOS-style  navigation bar at the top of the screen.
+<br> Creates an iOS-style  navigation bar at the top of the screen.
+
+[`CupertinoNavigationBar`][]
+<br> 在屏幕顶部创建一个 iOS 风格的导航栏。
 
 [`CupertinoSegmentedControl`][]
-: Creates a segmented control for selecting.
+<br> Creates a segmented control for selecting.
+
+[`CupertinoSegmentedControl`][]
+<br> 创建一个用于选择的分段控件。
 
 [`CupertinoTabBar`][] and [`CupertinoTabScaffold`][]
-: Creates the characteristic iOS bottom tab bar.
+<br> Creates the characteristic iOS bottom tab bar.
+
+[`CupertinoTabBar`][] 和 [`CupertinoTabScaffold`][]
+<br> 创建具有代表性的 iOS 底部选项卡栏。
 
 {% endtab %}
 
@@ -1186,6 +1204,8 @@ only Material apps can use the Material Components library.
 [`ListView`]: {{api}}/widgets/ListView-class.html
 [Material library]: {{api}}/material/material-library.html
 [widgets library]: {{api}}/widgets/widgets-library.html
+
+### Container
 
 ### Container
 
@@ -1300,6 +1320,8 @@ You can find more `Container` examples in the [tutorial][].
 
 ### GridView
 
+### GridView
+
 Use [`GridView`][] to lay widgets out as a two-dimensional
 list. `GridView` provides two pre-fabricated lists,
 or you can build your own custom grid. When a `GridView`
@@ -1340,6 +1362,7 @@ it automatically scrolls.
     `GridView.extent` 允许你制定单元格的最大宽度
 
 {% comment %}
+
 * Use `MediaQuery.of(context).orientation` to create a grid
   that changes its layout depending on whether the device
   is in landscape or portrait mode.
@@ -1423,6 +1446,8 @@ List<Widget> _buildGridTileList(int count) =>
 <hr>
 
 [`GridTile`]: {{api}}/material/GridTile-class.html
+
+### ListView
 
 ### ListView
 
@@ -1539,6 +1564,8 @@ ListTile _tile(String title, String subtitle, IconData icon) {
 
 ### Stack
 
+### Stack
+
 Use [`Stack`][] to arrange widgets on top of a base
 widget&mdash;often an image. The widgets can completely
 or partially overlap the base widget.
@@ -1636,6 +1663,8 @@ Widget _buildStack() {
 ```
 
 <hr>
+
+### Card
 
 ### Card
 
@@ -1787,6 +1816,8 @@ Widget _buildCard() {
 
 ### ListTile
 
+### ListTile
+
 Use [`ListTile`][], a specialized row widget from the
 [Material library][], for an easy way to create a row
 containing up to 3 lines of text and optional leading
@@ -1855,6 +1886,8 @@ and trailing icons. `ListTile` is most commonly used in
 </div>
 
 <hr>
+
+## Constraints
 
 ## Constraints
 
